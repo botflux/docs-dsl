@@ -23,6 +23,9 @@ export class FsStorage implements StorageInterface {
   }
 
   private async ensureDirCreated(dir: string): Promise<void> {
+    if (dir === "")
+      return
+
     await mkdir(dir, { recursive: true })
   }
 }

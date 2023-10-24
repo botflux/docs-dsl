@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gen": "rm -rf output && ts-node gen.ts"
+    "gen": "rm -rf output && ts-node gen.ts",
+    "gen-readme": "rm -rf README.md && ts-node gen-readme.ts"
   },
   "keywords": [],
   "author": "",
